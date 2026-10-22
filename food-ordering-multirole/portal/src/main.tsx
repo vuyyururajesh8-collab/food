@@ -1,0 +1,5 @@
+import React from 'react';import{createRoot}from'react-dom/client';import App from './App';import './styles.css';
+
+import React from 'react';import{createRoot}from'react-dom/client';import{Utensils,Store,UserRound,ArrowRight}from'lucide-react';import'./styles.css';
+function App(){return <main className="wrap"><div className="brand"><Utensils/> crave<span>.</span></div><small>ONE PLATFORM · TWO EXPERIENCES</small><h1>Good food brings<br/><em>everyone together.</em></h1><p>Order from local favourites or bring your restaurant online. Choose your portal.</p><div className="cards"><a href="http://localhost:5173"><UserRound/><small>FOR FOOD LOVERS</small><h2>Customer Portal</h2><p>Discover registered restaurants, explore menus and place demo orders.</p><b>Open customer app <ArrowRight/></b></a><a href="http://localhost:5174"><Store/><small>FOR RESTAURANT OWNERS</small><h2>Hotel Partner Portal</h2><p>Register your hotel, add menu items and appear in customer search.</p><b>Register or manage hotel <ArrowRight/></b></a></div><footer>One Spring Boot API · PostgreSQL · Three React ports</footer></main>}
+createRoot(document.getElementById('root')!).render(<App/>)
